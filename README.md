@@ -6,6 +6,5 @@ On Ubuntu 20.04
 
 python3 -m virtualenv project
 source project/bin/activate
-pip3 install pyteal
+pip3 install -r requirements.txt
 ```
-
