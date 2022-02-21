@@ -33,8 +33,10 @@ As anyone can be a liquidity provider, AMMs have made market making more accessi
 All of the examples were developed on a local network with local addresses. To duplicate the results and run the examples on your own, you will first need to make sure that you have an Algorand node running and `goal` set up with at least three accounts. 
 
 repository structure:
+```
 |__Sandbox
 |__AlgoSwapper
+```
 
 ```
 cd sandbox
@@ -44,8 +46,9 @@ to start an instance:
 ```
 ./sandbox up
 ```
+
 to list accounts:
-```
+```bash
 ./sandbox goal account list
 ```
 
@@ -88,6 +91,13 @@ Transaction 72JOG33S3DKMGQ3EOEXW26NQDRWJ7T4S2GRH2OC6Y3AH7UF5DLDA committed in ro
 ```
 
 ### Read Value
-```
+
+```bash
 ./sandbox goal app read --global --app-id 1
+```
+
+### Delete Application
+
+```bash
+./sandbox goal app delete --app-id 34 -f 'TQSYJU6BRS4ECUTREW6WAVMRK6MR2XAOC6TKQ46QSDQLVXQJE2O3TT63AU'
 ```
